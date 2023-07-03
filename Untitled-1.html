@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <title>CoDip_Makers - Создание дипломов</title>
+    <style>
+        .navbar {
+            background-color: rgba(0, 0, 0, 0.7);
+        }
+
+        .navbar a {
+            color: white;
+            transition: all 0.2s ease-in-out;
+        }
+
+        .navbar a:hover {
+            color: #f8f9fa;
+            text-decoration: none;
+        }
+
+        .hero {
+            height: 80vh;
+            background: url('images/diploma.jpg') center center no-repeat;
+            background-size: cover;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+        }
+
+        .btn-animate {
+            transition: all 0.2s ease-in-out;
+        }
+
+        .btn-animate:hover {
+            transform: scale(1.1);
+        }
+
+        .section {
+            padding: 40px 0;
+        }
+
+        .carousel-item {
+            height: 60vh;
+            background-size: cover;
+            background-position: center center;
+        }
+        .marketing {
+            text-align: center;
+            color: #555;
+            padding: 100px 0;
+            background: #f9f9f9;
+            border-top: 1px solid #eee;
+            border-bottom: 1px solid #eee;
+            font-family: 'Georgia', serif;
+            font-size: 20px; /* Увеличиваем размер шрифта */
+        }
+        .marketing h2 {
+            font-weight: bold; /* Делаем заголовок жирным */
+            margin-bottom: 50px; /* Увеличиваем отступы */
+            font-size: 36px; /* Увеличиваем размер шрифта заголовка */
+            text-transform: uppercase; /* Делаем все буквы заглавными */
+        }
+        .marketing p {
+            line-height: 1.6;
+            font-weight: 400; /* Устанавливаем нормальный вес шрифта для абзацев */
+        }
+        .marketing::before, .marketing::after {
+            content: ""; /* Добавляем псевдо-элементы */
+            display: block;
+            width: 100px;
+            height: 2px;
+            background: #555;
+            margin: 50px auto; /* Отцентровываем горизонтальные линии */
+        }
+        .footer {
+            background: #333;
+            color: #f9f9f9;
+            padding: 50px 0;
+            font-family: 'Georgia', serif;
+        }
+        .footer h4 {
+            font-size: 18px;
+            margin-bottom: 20px;
+            text-transform: uppercase;
+        }
+        .footer ul {
+            list-style-type: none;
+            padding-left: 0;
+        }
+        .footer ul li a {
+            color: #f9f9f9;
+            text-decoration: none;
+        }
+        .footer ul li a:hover {
+            color: #aaa;
+            transition: color 0.2s;
+        }
+        .about {
+            background: #f9f9f9;
+            color: #333;
+            padding: 80px 0;
+            font-family: 'Georgia', serif;
+        }
+        .about h2 {
+            font-weight: bold;
+            font-size: 36px;
+            text-transform: uppercase;
+            text-align: center;
+            margin-bottom: 50px;
+        }
+        .about p {
+            font-size: 18px;
+            line-height: 1.7;
+            color: #777;
+        }
+        .order-form-section {
+    background: #f9f9f9;
+    color: #333;
+}
+
+.order-form {
+    background: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.order-form label {
+    font-weight: bold;
+    color: #555;
+}
+
+.order-form .form-control {
+    border: 1px solid #ddd;
+    border-radius: 0;
+}
+
+.order-form .btn-primary {
+    background: #007bff;
+    border-color: #007bff;
+}
+
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">CoDip_Makers</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#services">Услуги</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Контакты</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <header class="hero">
+        <div class="container">
+            <h1 class="display-4">Добро пожаловать в CoDip_Makers</h1>
+            <p class="lead">Мы создаем профессиональные дипломы, которые делают вашу ученую степень заметной!</p>
+            <a href="#services" class="btn btn-light btn-lg btn-animate">Узнайте больше</a>
+        </div>
+    </header>
+    <section class="marketing">
+        <div class="container">
+            <h2>Почему выбирают нас?</h2>
+            <p>В течение последних 8 лет мы помогаем выпускникам по всему миру запечатлеть свои достижения и мечты в дипломах. Наш опыт и профессионализм, подкрепленные страстью к тому, что мы делаем, позволяют нам создавать продукты, которые не только выглядят великолепно, но и отражают уникальность каждого нашего клиента.</p>
+            <p>Мы верим, что каждый диплом - это больше, чем просто документ. Это маркер вашего успеха, труда и усилий, которые вы вкладывали на протяжении многих лет. Именно поэтому мы тщательно подходим к каждому заказу, вкладывая в него всю свою душу и любовь к искусству.</p>
+        </div>
+    </section>
+    <section class="section" id="services">
+        <div class="container">
+            <h2>Наши услуги</h2>
+            <p>Мы предлагаем широкий спектр услуг по созданию дипломов, каждая из которых направлена на удовлетворение ваших уникальных потребностей.</p>
+            <div id="servicesCarousel" class="carousel slide" data-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active" style="background-image: url('images/service1.jpg')">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Дипломы на заказ</h5>
+                            <p>Наши дипломы на заказ создаются с учетом ваших специфических требований и нужд, обеспечивая уникальность и оригинальность каждого проекта.</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item" style="background-image: url('images/service2.jpg')">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Быстрое изготовление</h5>
+                            <p>Мы ценим ваше время и обязуемся предоставить вам качественный продукт в кратчайшие сроки.</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item" style="background-image: url('images/service3.jpg')">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Качественные материалы</h5>
+                            <p>Мы используем только высококачественные материалы для изготовления ваших дипломов, гарантируя их долговечность и профессиональный внешний вид.</p>
+                        </div>
+                    </div>
+                </div>
+                <a class="carousel-control-prev" href="#servicesCarousel" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Предыдущий</span>
+                </a>
+                <a class="carousel-control-next" href="#servicesCarousel" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Следующий</span>
+                </a>
+            </div>
+        </div>
+    </section>
+    <section class="about">
+        <div class="container">
+            <h2>О нашей компании</h2>
+            <p>CoDip_Makers - это компания, создающая дипломы высочайшего качества. Основанная в 2015 году группой энтузиастов, наша компания быстро выросла до международного уровня, обслуживая тысячи клиентов по всему миру каждый год.</p>
+            <p>Наша миссия - помочь каждому студенту или профессионалу увековечить свои достижения и мечты в дипломе, который они будут гордо демонстрировать. Мы стремимся к тому, чтобы каждый наш диплом был не просто документом, а историей о личном росте и успехе.</p>
+            <p>Мы гордимся тем, что можем предложить нашим клиентам продукты, которые превосходят их ожидания и вдохновляют их стремиться к еще большим успехам. Благодаря нашей страсти к качеству и вниманию к деталям, мы продолжаем оставаться лидерами в нашей области.</p>
+        </div>
+    </section>
+    <section class="order-form-section py-5">
+        <div class="container">
+            <h2 class="text-center mb-4">Заказать сейчас</h2>
+            <form class="order-form">
+                <div class="form-row">
+                    <div class="form-group col-md-6">
+                        <label for="order-name">Ваше имя</label>
+                        <input type="text" class="form-control" id="order-name" placeholder="Введите ваше имя">
+                    </div>
+                    <div class="form-group col-md-6">
+                        <label for="order-email">Ваш email</label>
+                        <input type="email" class="form-control" id="order-email" placeholder="Введите ваш email">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="order-service">Выберите услугу</label>
+                    <select class="form-control" id="order-service">
+                        <option>Курсовая работа</option>
+                        <option>Дипломная работа</option>
+                        <option>Диссертация</option>
+                        <option>Статья</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="order-details">Детали заказа</label>
+                    <textarea class="form-control" id="order-details" rows="3" placeholder="Введите детали вашего заказа"></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary btn-block">Подать заказ</button>
+            </form>
+        </div>
+    </section>
+    
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+        <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <h4>О нас</h4>
+                    <ul>
+                        <li><a href="#">Компания</a></li>
+                        <li><a href="#">Карьера</a></li>
+                        <li><a href="#">Правила использования</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <h4>Сервисы</h4>
+                    <ul>
+                        <li><a href="#">Дипломы</a></li>
+                        <li><a href="#">Сертификаты</a></li>
+                        <li><a href="#">Бланки</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <h4>Контакты</h4>
+                    <ul>
+                        <li><a href="#">Связаться с нами</a></li>
+                        <li><a href="#">Поддержка</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
